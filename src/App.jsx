@@ -19,7 +19,6 @@ export default function App() {
     try {
       const response = await axios.get(url, { headers: { 'X-Api-Key': 'fPcr7lc76r4UhtzJp8LqhQ==3UbWVyHN3Hl8zoK9' }, })
       const quote = response.data[0]
-      console.log(response)
       setQuote(quote)
       setThemeColor(setTheme())
     } catch (e) {
