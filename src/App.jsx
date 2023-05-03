@@ -32,8 +32,6 @@ export default function App() {
 
   return (
     <main style={{ background: themeColor }}>
-      {/*       {!quote && <h1>Loading...</h1>}
-      <QuoteBox quote={quote["quote"]} author={quote["author"]} fetchQuote={getQuote} color={themeColor} /> */}
 
       {
         (typeof (quote.quote) == "string") ? (<QuoteBox quote={quote["quote"]} author={quote["author"]} fetchQuote={getQuote} color={themeColor} />)
